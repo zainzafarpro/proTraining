@@ -1,0 +1,108 @@
+*{
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+@media screen and (max-width:1200px){
+    $h2:18px;
+    $h4:16px;
+    $basic: 12px;
+}
+#header{
+    // background:url(?holder.js/1920x914?align=left&bg=7b7b7b&auto=yes) no-repeat;
+    background-color: $boulder;
+    background-size: cover;
+    .resgius-logo{
+        width: 100%;
+        max-width: 290px;
+    }
+    
+    .fa-bars{
+        font-size: 30px;
+        margin: 10px;
+        text-align: right;
+        position: absolute;
+        right: 15px;
+        top: -60px;
+    }
+    .main-nav {
+        margin: 30px 0;
+        @media screen and (max-width:$mobile) {
+            display: none;
+        }
+    }
+    ul{
+        li{
+            display: inline-block;
+            @media screen and (max-width:$mobile){
+                display: block;
+                margin: 10px 0;
+            }
+        }
+        a{
+            color: $white;
+            text-decoration: none;
+            font-size: 18px;
+            border-bottom: 2px solid transparent;
+            &:hover{
+                color: $azure-radiance;
+                border-color: $azure-radiance;
+            }
+            @media screen and (max-width:$container){
+                font-size: 15px;
+            }
+        }
+    }
+    .login{
+        padding: 0;
+        list-style: none;
+        @media screen and (max-width:$mobile){
+            text-align: center;
+        }
+        li{
+            margin: 0 5px;
+            @media screen and (max-width:$mobile){
+                display: inline-block;
+            }
+        }
+        a{
+            padding: 5px 10px;
+            border: 1px solid $white;
+            &:hover{
+                border-color: $azure-radiance;
+            }
+        }
+    }
+    .thinking-wrapper{
+        margin: 150px 0;
+        overflow: hidden;
+        @media screen and (max-width:$mobile){
+            margin: 50px 0;
+        }
+        h1{
+            font-size: 135px;
+            color: $azure-radiance;
+            font-weight: 900;
+            @media screen and (max-width:$mobile){
+                font-size: 70px;
+            }
+        }
+        p{
+            max-width: 550px;
+            color: $white;
+        }
+        .heading-text{
+            font-size: 62px;
+            @media screen and (max-width:$mobile){
+                font-size: 30px;
+            }
+        }
+    }
+}
+.nav>li>a{
+    &:hover{
+        background-color:transparent;
+    }
+        @media screen and (max-width:$container) {
+            padding: 10px;
+        }
+    }

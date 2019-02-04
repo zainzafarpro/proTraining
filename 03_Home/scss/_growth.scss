@@ -1,0 +1,13 @@
+.growth{
+    h2{
+        @include h2;
+    }
+    p{
+        @include title-line;
+    }
+    img{
+        @media only screen and (max-width:$container){
+            width: 100%;
+        }
+    }
+}

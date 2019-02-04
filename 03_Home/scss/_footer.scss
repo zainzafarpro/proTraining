@@ -1,0 +1,43 @@
+#footer{
+    .footer-nav-wrapper{
+        padding: 50px 0;
+    }
+    h5{
+        font-size: $title-line;
+        font-weight: 600;
+        padding-bottom: 20px;
+        margin: 0;
+        border-bottom: 1px solid $mine-shaft;
+    }
+    ul{
+        list-style-type: none;
+        padding: 0;
+        li{
+            padding: 10px 0;
+        }
+        a{
+            color: $mine-shaft;
+            font-size: 16px;
+            text-decoration: none;
+            &:hover{
+                color: $lochmara;
+            }
+        }
+    }
+    .sticky-line{
+        background-color: $lochmara;
+        color: $white;
+        text-align: center;
+        margin: auto auto 0 auto;
+        p{
+            padding: 15px 0;
+            margin: 0;
+        }
+    }
+    img{
+        @media screen and (max-width:$container){
+            width: 100%;
+            max-width: 260px;;
+        }
+    }
+}

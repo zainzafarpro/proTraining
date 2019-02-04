@@ -1,0 +1,74 @@
+.feedback{
+    background-color: $azure-radiance;
+    color: $white;
+    text-align: center;
+    h2{
+        @include h2;
+    }
+    .title-line{
+        @include title-line;
+    }
+    .fa-quote-left{
+        font-size: $h4;
+        color: $malachite;
+        border: 1px solid $malachite;
+        padding: 10px;
+        border-radius: 20px;
+    }
+    .container{
+        max-width: 760px;
+    }
+    p{
+        margin: 20px 0;
+        font-size: $basic;
+    }
+    img{
+        border-radius: 100px;
+        float: left;
+        margin-right: 10px;
+        @media screen and (max-width:$tablet) {
+            float: none;
+            margin-right: 0;
+        }
+    }
+    .small-name{
+        font-size: 14px;
+        display: block;
+        text-align: left;
+        @media screen and (max-width:$tablet) {
+            text-align: center;
+            font-size: 11px;
+        }
+    }
+    .big-name{
+        font-size: 18px;
+        display: block;
+        text-align: left;
+        @media screen and (max-width:$tablet) {
+            text-align: center;
+            font-size: 14px;
+        }
+    }
+    .small-designation{
+        font-size: 12px;
+        display: block;
+        text-align: left;
+        @media screen and (max-width:$tablet) {
+            text-align: center;
+            font-size: 10px;
+        }
+    }
+    .big-designation{
+        font-size:15px;
+        display: block;
+        text-align: left;
+        @media screen and (max-width:$tablet) {
+            text-align: center;
+        }
+    }
+    .col-xs-4{
+        @media screen and (max-width:$tablet){
+            margin-bottom: 20px;
+        }
+    }
+}

@@ -1,0 +1,42 @@
+.team{
+    text-align: center;
+    h2{
+        @include h2;
+    }
+    h4{
+        font-size: 20px;
+    }
+    .title-line{
+        @include title-line;
+    }
+    .team-box{
+        border: 1px solid $azure-radiance;
+        max-width: 264px;
+        margin: 0 auto;
+        overflow: hidden;
+        img{
+            padding: 1px;
+            @media screen and (max-width:$container){
+                width: 100% !important;
+            }
+        }
+    }
+    p{
+        font-size: $basic;
+    }
+    .icon-set{
+        border-top: 1px solid $boulder;
+        padding: 10px 0 0 0;
+        i{
+            border: 1px solid $mine-shaft;
+            padding: 5px 6px;
+            border-radius: 30px;
+            margin: 2px;
+        }
+    }
+    .col-md-3{
+        @media screen and (max-width:$tablet){
+            margin-bottom: 20px;
+        }
+    }
+}

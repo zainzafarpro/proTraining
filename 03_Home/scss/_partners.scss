@@ -1,0 +1,21 @@
+.partners{
+    text-align: center;
+    background-color: $gallery;
+    color: $mine-shaft;
+    h2{
+        @include h2;
+    }
+    .partners-article{
+        padding: 35px 35px 0;
+        img{
+            margin-bottom: 30px;
+            @media screen and (max-width:$tablet){
+            width: 100%;
+            max-width: 250px;
+            }
+        }
+        p{
+            font-size: $basic;
+        }
+    }
+}

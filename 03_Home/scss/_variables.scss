@@ -1,0 +1,31 @@
+// Colors
+
+$azure-radiance: #009cff;
+$lochmara: #007dcd;
+$malachite:#00e55d;
+$white:#ffffff;
+$boulder:#7b7b7b;
+$mine-shaft:#3c3c3c;
+$alto:#d8d8d8;
+$silver-chalice:#aeaeae;
+$gallery:#efefef;
+
+// Fonts sizes
+$h2:45px;
+$h4:20px;
+$basic: 15px;
+$title-line:18px;
+
+@media screen and (max-width:1200px){
+    $h2:18px;
+    $h4:16px;
+    $basic: 12px;
+}
+
+
+// Media Sizes
+
+$mobile:767px;
+$tablet:992px;
+$desktop:1024px;
+$container:1200px;

@@ -1,0 +1,37 @@
+.internet-money{
+    background-color: $boulder;
+    color: $white;
+     h2{
+        @include h2;
+    }
+    p{
+        @include title-line;
+    }
+    h4{
+        font-size: $h4;
+        text-align: center;
+        padding: 30px 0;
+        border-bottom: 1px solid $azure-radiance;
+    }
+    ul{
+        list-style-type:none;
+        padding: 0;
+        li{
+            padding-left: 30px;
+            position: relative;
+            margin: 15px 0;
+            &::before{
+                content: "\f00c";
+                font-family: FontAwesome;
+                display: inline-block;
+                width: 30px;
+                height: 20px;
+                font-size: 20px;
+                color: $malachite;
+                position: absolute;
+                top: 0;
+                left: 0;
+            }
+        } 
+    }
+}
