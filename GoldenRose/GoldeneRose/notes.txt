@@ -1,0 +1,24 @@
+Tablet Resolution 	yes
+Mobile Resolution 	yes
+Desktop Resolution 	yes
+Layout Width Responsive 	yes
+Drop-Down Menu 	yes
+Carousel 	yes
+SEO Semantic Coding 	yes
+Implement Rollovers 	yes
+Optimized for Load Speed 	yes
+Windows Phone 8+ Compatibility 	yes
+iPhone/iPad 	yes
+Android 	yes
+Blackberry 	yes
+Mobile Device Compatibility 	yes
+JavaScript Framework jQuery 	yes
+HTML5 	yes
+W3C Valid CSS 3.0 	yes
+W3C Valid Shorthand and Optimized CSS 	yes
+IE8 Compatibility 	yes 
+
+
+2 pages
+
+18 hours

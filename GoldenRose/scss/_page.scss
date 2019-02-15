@@ -1,0 +1,157 @@
+.header-wrapper{
+    background: url(../images/winter.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 850px;
+    @media screen and (max-width:$medium){
+            min-height: 600px;
+    }
+    @media screen and (max-width:$small){
+        max-width: 540px;
+    }
+    .block-wrapper{
+        min-height: 600px;
+        position: relative;
+        @media screen and (max-width:$medium){
+            min-height: 300px;
+        }
+    }
+    .the-block{
+        display: inline-block;
+        background-color: rgba($color: $alabaster, $alpha: 0.8);
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        padding: 30px 20px 20px 50px;
+        min-width: 750px;
+         @media screen and (max-width:$medium){
+            min-width: 300px;
+            padding: 10px 20px;
+        }
+        @media screen and (max-width:$small){
+            padding: 5px 10px;
+        }
+        h1{
+            @include h1;
+            display: inline-block;
+            span{
+                float: right;
+            }
+        }
+        p{
+            font-size: 16px;
+            font-family: $basic;
+            margin: 0;
+            @media screen and (max-width:$medium){
+                font-size: 12px;
+            }
+        }
+        button{
+            @include button;
+            float: right;
+            @media screen and (max-width:$medium){
+                float: none;
+                display: block;
+                margin: 5px 0 auto auto;
+            }
+        }
+        .short-line{
+            display: inline-block;
+        }
+    }
+}
+.hotel-intro{
+    padding: 40px 0;
+    h1{
+        @include h1;
+        text-align: center;
+    }
+    p{
+        font-size: 17px;
+        font-family: $basic;
+        padding: 0 20px;
+         @media screen and (max-width:$medium){
+            font-size: 12px;
+        }
+    }
+    .color-change{
+        color: $teak;
+    }
+}
+.beds{
+    .bed-description{
+        background-color: $pampas;
+        padding: 20px 0;
+    }
+    h4{
+        font-family: $basic;
+        font-size: 17px;
+        text-align: center;
+    }
+    p{
+        @include normal-text;
+        text-align: center;
+        margin: 10px auto;
+        max-width: 850px;
+    }
+    img{
+        width: 100%;
+    }
+}
+.room-selection{
+    text-align: center;
+    background-color: $pearl-bush;
+    font-family: $basic;
+    padding: 40px 0;
+    color: $teak;
+    p{
+        @media screen and (max-width:$medium){
+            font-size: 12px;
+        }
+    }
+    h4{
+        font-size: 17px;
+        text-transform: uppercase
+    }
+    ul{
+        list-style: none;
+        padding: 0;
+        display: inline-block;
+        vertical-align: top;
+        @media screen and (max-width:$medium){
+            display: block;
+            overflow: hidden;
+            text-align: center;
+        }
+        li{
+            float: left;
+            margin: 10px;
+            @media screen and (max-width:$medium){
+                display: inline-block;
+                float: none;
+            }
+            @media screen and (max-width:$small){
+                margin: 5px;
+            }
+        }
+        a{
+            padding: 10px 50px;
+            border: 1px solid $teak;
+            color: $teak;
+            text-decoration: none;
+            text-transform: uppercase;
+             @media screen and (max-width:$medium){
+                font-size: 12px;
+                padding: 10px 30px;
+            }
+            @media screen and (max-width:$small){
+                padding: 5px 10px;
+            }
+        }
+    }
+    button{
+        @include button;
+        vertical-align: top;
+        margin: 0 5px;
+    }
+}

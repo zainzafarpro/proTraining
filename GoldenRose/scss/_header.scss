@@ -1,0 +1,147 @@
+#header{
+   padding-top: 40px;
+   @media screen and (max-width:$small){
+       padding-top: 20px;
+   }
+   img{
+       @media screen and (max-width:$large){
+           display: block;
+           margin: 0 auto;
+       }
+   }
+}
+.nav-wrapper{
+    text-align: right;
+    @media screen and (max-width:$large){
+        text-align: center;
+    }
+    .navbar-nav{
+        float: right;
+        @media screen and (max-width:$large){
+            float: none;
+            margin: 0 auto;
+            display: inline-block;
+        }
+        @media screen and (max-width:$small){
+            display: block;
+        }
+    }
+    .upper-nav{
+        li{
+            @media screen and (max-width:$small){
+                display: inline-block;
+            }
+        }
+        a{
+            font-family: $basic;
+            font-size: 16px;
+            color: $teak;
+            font-weight: 900;
+            padding: 0 15px;
+            @media screen and (max-width:$large){
+                font-size: 12px;
+            }
+            @media screen and (max-width:$small){
+                font-size: 10px;
+                padding: 0 5px;
+            }
+             &:hover, &:active, &:focus{
+                background-color:transparent;
+            }
+        }
+        .fa-angle-down{
+            vertical-align: bottom;
+            @media screen and (max-width:$large){
+                vertical-align: middle;
+            }
+        }
+    }
+    .fa-bars{
+        text-align: right;
+        margin-bottom: 5px;
+    }
+    .lower-nav{
+        @media screen and (max-width:$small) {
+            display: none;
+            margin-bottom: 10px;
+        }
+        &>li{
+            &:last-child{
+                a{
+                    @include button;
+                    margin: 0;
+                }
+            }
+        }
+        a{
+            font-family: 'Raleway', sans-serif;
+            font-size: 16px;
+            color: $dawn;
+            background-color: $white-rock;
+            padding: 10px 25px;
+            margin: 0 1px;
+            @media screen and (max-width:$large){
+                font-size: 12px;
+                padding: 5px 15px;
+            }
+            &:hover, &:active, &:focus{
+                background-color: $pearl-bush;
+            }
+        }
+    }
+    @media screen and (min-width:$small){
+        .dropdown:hover .dropdown-menu {
+            display: block;
+        }
+    }
+    .dropdown-menu{
+        min-width: 320px;
+        background-color: $pearl-bush !important;
+        border: none;
+        border-radius: 0 0 10px 10px;
+        @media screen and (max-width:$small){
+            min-width: 0;
+        }
+        ul{
+            list-style: none;
+            float: left;
+            padding: 0;
+            min-width: 140px;
+            @include normal-text;
+            margin: 10px;
+            @media screen and (max-width:$small){
+                float: none;
+            }
+            li{  
+                &:first-child{
+                    border-bottom: 1px dotted $dawn;
+                    list-style: none;
+                    padding: 0;
+                    margin-bottom: 5px;
+                    a{
+                        &:hover{
+                            background-color: transparent;
+                            color: $dawn;
+                        }
+                    }
+                }
+                &:not(:first-child){
+                    &::before{
+                        content:">" ;
+                        display: inline-block;
+                    }
+                }
+            }
+            a{
+                padding: 0;
+                background-color: transparent;
+                font-size: 12px;
+                text-decoration: none;
+                &:hover{
+                    background-color: transparent;
+                    color: $tapa;
+                }
+            }
+        }
+    }
+}
