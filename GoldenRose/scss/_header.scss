@@ -34,15 +34,18 @@
         }
         a{
             font-family: $basic;
-            font-size: 16px;
+            @include font(16px);
             color: $teak;
             font-weight: 900;
             padding: 0 15px;
             @media screen and (max-width:$large){
-                font-size: 12px;
+                @include font(12px);
+            }
+            @media screen and (max-width:$medium){
+                @include font(10px);
+                padding: 0 10px;
             }
             @media screen and (max-width:$small){
-                font-size: 10px;
                 padding: 0 5px;
             }
              &:hover, &:active, &:focus{
@@ -56,16 +59,11 @@
             }
         }
     }
-    .fa-bars{
-        text-align: right;
-        margin-bottom: 5px;
-    }
     .lower-nav{
         @media screen and (max-width:$small) {
-            display: none;
             margin-bottom: 10px;
         }
-        &>li{
+        >li{
             &:last-child{
                 a{
                     @include button;
@@ -75,14 +73,17 @@
         }
         a{
             font-family: 'Raleway', sans-serif;
-            font-size: 16px;
+            @include font(16px);
             color: $dawn;
             background-color: $white-rock;
             padding: 10px 25px;
             margin: 0 1px;
             @media screen and (max-width:$large){
-                font-size: 12px;
+                @include font(12px);
                 padding: 5px 15px;
+            }
+            @media screen and (max-width:$medium){
+                padding: 5px 10px;
             }
             &:hover, &:active, &:focus{
                 background-color: $pearl-bush;
@@ -93,6 +94,9 @@
         .dropdown:hover .dropdown-menu {
             display: block;
         }
+    }
+    @media screen and (max-width:$small){
+        display: none;
     }
     .dropdown-menu{
         min-width: 320px;
@@ -105,10 +109,13 @@
         ul{
             list-style: none;
             float: left;
-            padding: 0;
+            padding: 10px;
             min-width: 140px;
             @include normal-text;
-            margin: 10px;
+            margin: 0;
+            &:first-child{
+                border-right: 1px solid rgba(55,55,55,0.1);
+            }
             @media screen and (max-width:$small){
                 float: none;
             }
@@ -129,13 +136,14 @@
                     &::before{
                         content:">" ;
                         display: inline-block;
+                        color: $dawn;
                     }
                 }
             }
             a{
                 padding: 0;
                 background-color: transparent;
-                font-size: 12px;
+                @include font(12px);
                 text-decoration: none;
                 &:hover{
                     background-color: transparent;
@@ -145,3 +153,7 @@
         }
     }
 }
+.fa-bars{
+        text-align: right;
+        margin-bottom: 5px;
+    }

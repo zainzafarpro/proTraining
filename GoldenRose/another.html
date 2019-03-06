@@ -19,10 +19,11 @@
     <header id="header">
         <div class="container">
             <div class="row">
-                <div class="col-md-3">
+                <div class="col-sm-3">
                     <img src="./images/logo-vector2.png" alt="Golden Rose">
                 </div>
-                <div class="col-md-9">
+                <div class="col-sm-9">
+                    <i class="fas fa-bars visible-xs"></i>
                     <div class="nav-wrapper">
                         <ul class="nav navbar navbar-nav upper-nav">
                             <li>
@@ -51,7 +52,6 @@
                                 </a>
                             </li>
                         </ul>
-                        <i class="fas fa-bars visible-xs"></i>
                         <ul class="nav navbar navbar-nav lower-nav">
                             <li>
                                 <a href="#">Leistungen</a>
@@ -113,7 +113,7 @@
                 <ul>
                     <li><a href="#">Hotel Goldene Rose</a></li>
                     <li><a href="#">Zimmer & Preise</a></li>
-                    <li><a href="#">Doppelzimmer Santana</a></li>
+                    <li>Doppelzimmer Santana</li>
                 </ul>
                 <div class="intro">
                     <h1>Wohlfühlzimmer im Hotel Goldene Rose</h1>
@@ -288,54 +288,70 @@
                 <h3>Alle doppelezimmer im uberblick</h3>
                 <div class="row">
                     <div class="col-md-3 col-sm-6">
-                        <div class="img-wrapper">
-                            <img src="./images/bed1.png" alt="Room 1">
-                            <p>Doppelzimmer AZUBIS</p>
-                        </div>
+                       <a href="#">
+                            <div class="img-wrapper">
+                                <img src="./images/bed1.png" alt="Room 1">
+                                <p>Doppelzimmer AZUBIS</p>
+                            </div>
+                       </a>
                     </div>
                     <div class="col-md-3 col-sm-6">
-                        <div class="img-wrapper">
-                            <img src="images/bed2.png" alt="Room 2">
-                            <p>Doppelzimmer Ariosa</p>
-                        </div>
+                        <a href="#">
+                            <div class="img-wrapper">
+                                <img src="images/bed2.png" alt="Room 2">
+                                <p>Doppelzimmer Ariosa</p>
+                            </div>
+                        </a>
                     </div>
                     <div class="col-md-3 col-sm-6">
-                        <div class="img-wrapper">
-                            <img src="images/bed3.png" alt="Room 3">
-                            <p>Doppelzimmer gloria</p>
-                        </div>
+                        <a href="#">
+                            <div class="img-wrapper">
+                                <img src="images/bed3.png" alt="Room 3">
+                                <p>Doppelzimmer gloria</p>
+                            </div>
+                        </a>
                     </div>
                     <div class="col-md-3 col-sm-6">
-                        <div class="img-wrapper">
-                            <img src="images/bed4.png" alt="Room 4">
-                            <p>Doppelzimmer elfe</p>
-                        </div>
+                        <a href="#">
+                            <div class="img-wrapper">
+                                <img src="images/bed4.png" alt="Room 4">
+                                <p>Doppelzimmer elfe</p>
+                            </div>
+                        </a>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-md-3 col-sm-6">
-                        <div class="img-wrapper">
-                            <img src="images/bed5.png" alt="Room 5">
-                            <p>Doppelzimmer sinfonie</p>
-                        </div>
+                        <a href="#">
+                            <div class="img-wrapper">
+                                <img src="images/bed5.png" alt="Room 5">
+                                <p>Doppelzimmer sinfonie</p>
+                            </div>
+                        </a>
                     </div>
                     <div class="col-md-3 col-sm-6">
-                        <div class="img-wrapper">
-                            <img src="images/bed6.png" alt="Room 6">
-                            <p>Doppelzimmer traviata</p>
-                        </div>
+                        <a href="#">
+                            <div class="img-wrapper">
+                                <img src="images/bed6.png" alt="Room 6">
+                                <p>Doppelzimmer traviata</p>
+                            </div>
+                        </a>
                     </div>
                     <div class="col-md-3 col-sm-6">
-                        <div class="img-wrapper">
-                            <img src="images/bed4.png" alt="Room 7">
-                            <p>Doppelzimmer santana</p>
-                        </div>
+                        <a href="#">
+                            <div class="img-wrapper">
+                                <img src="images/bed4.png" alt="Room 7">
+                                <p>Doppelzimmer santana</p>
+                            </div>
+                        </a>
                     </div>
                     <div class="col-md-3 col-sm-6">
-                        <div class="img-wrapper">
+                        <a href="#">
+                            <div class="img-wrapper">
                             <img src="images/bed4.png" alt="Room 8">
                             <p>Doppelzimmer medeo</p>
-                        </div>
+                            </div>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -352,8 +368,11 @@
                             <li>PustertalstraBe 5,</li>
                             <li>I-39035 Welsberg (BZ),</li>
                             <li>MwSt. Nr. 02380120218,</li>
-                            <li>Tel. +39 0474 944 113,</li>
-                            <li>info@hotel-goldenerose.com</li>
+                            <li>Tel.
+                                <a href="tel:+39 0474 944 113"> +39 0474 944 113,</li>
+                            <li>
+                                <a href="mailto:webmaster@example.com"> info@hotel-goldenerose.com</a>
+                            </li>
                         </ul>
                     </div>
                     <div class="col-md-3 col-sm-6">
@@ -410,11 +429,21 @@
             </div>
         </section>
         <section class="bottom-line">
-            <img src="./images/nordi.png" alt="NordicSki">
-            <img src="./images/sudtirol.png" alt="Sudtirol">
-            <img src="./images/dolomiti.png" alt="Dolomiti">
-            <img src="./images/taisten.png" alt="Taisten">
-            <img src="./images/skido.png" alt="Skido">
+            <a href="#">
+                <img src="./images/nordi.png" alt="NordicSki">
+            </a>
+            <a href="#">
+                <img src="./images/sudtirol.png" alt="Sudtirol">
+            </a>
+            <a href="#">
+                <img src="./images/dolomiti.png" alt="Dolomiti">
+            </a>
+            <a href="#">
+                <img src="./images/taisten.png" alt="Taisten">
+            </a>
+            <a href="#">
+                <img src="./images/skido.png" alt="Skido">
+            </a>
         </section>
     </footer>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>

@@ -1,11 +1,14 @@
 @mixin h1 {
     font-size: 36px;
     font-style: italic;
-    font-family: 'Libre Baskerville', serif;
+    font-family: $headings;
     text-transform: capitalize;
     color: $teak;
     @media screen and (max-width:$medium){
         font-size: 24px;
+    }
+    @media screen and (max-width:$small){
+        font-size: 18px;
     }
 }
 @mixin normal-text {
@@ -37,4 +40,7 @@
     &:hover{
         background-color: $flame-pea;
     }
+}
+@mixin font($font-s){
+  font-size: $font-s;
 }
