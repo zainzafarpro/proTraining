@@ -1,0 +1,150 @@
+*{
+  box-sizing: border-box;
+  font-family: $primary-font !important;
+}
+.row{
+  margin-bottom: 0;
+}
+#header{
+  background-color: $saffron;
+  .nav-wrapper{
+    padding-left: 50px;
+    @media screen and (max-width:$mobile){
+      padding-left: 0;
+    }
+  }
+  .header-wrapper{
+    padding: 0 30px;
+    position: relative;
+    @media screen and (max-width:$mobile){
+      padding: 0 15px;
+    }
+    >.searchbar{
+        @media screen and (max-width:$mobile){
+          display: none !important;
+          text-align: center;
+        }
+    }
+    >.nav-wrapper{
+        @media screen and (max-width:$mobile){
+          display: none !important;
+          text-align: center;
+        }
+    }
+    >.icons-wrap{
+        @media screen and (max-width:$mobile){
+          display: none !important;
+          text-align: center;
+        }
+    }
+    div{
+      display: inline-block;
+      @media screen and (max-width:$mobile){
+        display: block;
+        margin: 0 auto;
+      }
+    }
+    .fa-bars{
+      font-family: "Font Awesome 5 Free"!important;
+      position: absolute;
+      top: 15px;
+      left: 10px;
+      @media screen and (min-width:$mobile){
+        display: none;
+      }
+    }
+    .fa-times{
+      font-family: "Font Awesome 5 Free"!important;
+      float: right;
+      padding: 10px;
+    }
+  }
+  ul{
+    padding: 15px 0;
+    li{
+      display: inline-block;
+      padding: 5px 15px;
+      @media screen and (max-width:$mobile){
+        display: block;
+      }
+    }
+    a{
+      color: $tundora;
+      @include font(12px , 700);
+      text-transform: uppercase;
+      border-bottom: 2px solid transparent;
+      &:hover{
+        border-color: $cerulean;
+      }
+    }
+  }
+  .brand-logo{
+    float: left;
+    padding: 10px 0;
+    img{
+      vertical-align: middle;
+    }
+    @media screen and (max-width:$mobile){
+      margin: 0 auto;
+      display: block;
+      text-align: center;
+      float: none;
+    }
+  }
+  .searchbar{
+    padding: 10px 20px;
+    @media screen and (max-width:$mobile){
+      padding: 10px 0;
+    }
+    input{
+      height: unset;
+      border: none;
+      padding: 5px 0 5px 20px;
+      background-color: #fff;
+      background-image: url(../assett/search.svg);
+      background-repeat: no-repeat;
+      background-position: 5px;
+      background-size: 12px;
+      max-width: 300px;
+      &::placeholder{
+        font-size: 12px;
+        color: black;
+      }
+    }
+  }
+  .icons-wrap{
+    padding: 20px 0;
+    @media screen and (max-width:$mobile){
+      padding: 10px 0;
+    }
+    i{
+      padding: 5px 10px;
+      font-size: 16px;
+    }
+    .icon-facebook-logo{
+      &:hover{
+        color: $fb-logo;
+      }
+    }
+    .icon-twitter-logo-silhouette{
+      &:hover{
+        color:$twitter-logo;
+      }
+    }
+    .icon-instagram-social-network-logo-of-photo-camera{
+      &:hover{
+        color:$insta-logo;
+      }
+    }
+    .icon-padlock{
+      border-right: 1px solid silver;
+      border-left: 1px solid silver;
+    }
+  }
+  .sidenav{
+    input{
+      max-width: 250px;
+      margin-left: 10px;
+    }
+  }
+}

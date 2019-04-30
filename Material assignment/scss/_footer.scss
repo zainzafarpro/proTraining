@@ -1,0 +1,23 @@
+#footer{
+  background-color: $scorpion;
+  padding: 30px 0;
+  ul{
+    li{
+      display: inline-block;
+      padding: 0 15px;
+    }
+    a{
+      color: white;
+      @include font(12px , 500);
+      text-transform: uppercase;
+    }
+  }
+  .copyrights{
+    color: $white;
+    text-align: right;
+    @include font(12px , 400);
+    @media screen and (max-width:$mobile){
+      margin-top: 10px;
+    }
+  }
+}

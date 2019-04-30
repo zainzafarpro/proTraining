@@ -1,0 +1,16 @@
+@mixin font($size , $weight) {
+  font-size:$size;
+  font-weight:$weight;
+}
+@mixin btn {
+  padding: 10px 25px;
+  color: $white;
+  background-color: $cerulean;
+  border: none;
+  box-shadow: 2px 2px 10px $scorpion;
+  border-radius: 2px;
+  float: right;
+  @media only screen and (max-width:600px)  {
+    font-size: 12px;
+  }
+}
