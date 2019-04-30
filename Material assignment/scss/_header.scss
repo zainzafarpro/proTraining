@@ -5,6 +5,10 @@
 .row{
   margin-bottom: 0;
 }
+.custom-container{
+  max-width: 1440px;
+  margin: auto;
+}
 #header{
   background-color: $saffron;
   .nav-wrapper{
@@ -93,6 +97,24 @@
   }
   .searchbar{
     padding: 10px 20px;
+    position: relative;
+    .search-dropdown{
+      position: absolute;
+      top: 38px;
+      background-color: $white;
+      z-index: 2;
+      border-top: 1px solid $silver-chalice;
+      ul{
+        padding: 5px 0;
+      }
+      li{
+        @include font(10px , 400);
+      }
+      .active{
+        border-left: 3px solid $saffron;
+        color: $saffron;
+      }
+    }
     @media screen and (max-width:$mobile){
       padding: 10px 0;
     }
@@ -117,9 +139,14 @@
     @media screen and (max-width:$mobile){
       padding: 10px 0;
     }
+    a{
+      text-decoration: none;
+      color: $tundora;
+    }
     i{
       padding: 5px 10px;
       font-size: 16px;
+      cursor: pointer;
     }
     .icon-facebook-logo{
       &:hover{
@@ -142,6 +169,7 @@
     }
   }
   .sidenav{
+    background-color: $saffron;
     input{
       max-width: 250px;
       margin-left: 10px;

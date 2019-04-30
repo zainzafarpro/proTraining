@@ -5,7 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>CUCKOO</title>
-  <link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Slab" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700,900" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,700" rel="stylesheet">
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
       crossorigin="anonymous">
@@ -13,37 +14,44 @@
 </head>
 <body>
   <header id='header'>
+    <div class="custom-container">
       <div class="row">
         <div class="header-wrapper">
           <a href="#" class="brand-logo">
-            <img src="/assett/logo.png" alt="Cuckoo">
+            <img src="assett/logo.png" alt="Cuckoo">
           </a>
           <i class="fas fa-bars"></i>
-            <div class="searchbar">
-              <input type="search" placeholder="Search Adverticements">
-            </div>
-            <div class="nav-wrapper">
+          <div class="searchbar">
+            <input type="search" placeholder="Search Adverticements">
+            <div class="search-dropdown">
               <ul>
-                <li>
-                  <a href="#">Home</a>
-                </li>
-                <li>
-                  <a href="#">About us</a>
-                </li>
-                <li>
-                  <a href="#">Products</a>
-                </li>
-                <li>
-                  <a href="#">Contact us</a>
-                </li>
+                <li class="active">Find Luggage Partner</li>
+                <li>Earn Money By Carrying Luggage</li>
               </ul>
             </div>
-            <div class="right icons-wrap">
-              <i class="icon-padlock"></i>
-              <i class="icon-twitter-logo-silhouette"></i>
-              <i class="icon-facebook-logo"></i>
-              <i class="icon-instagram-social-network-logo-of-photo-camera"></i>
-            </div>
+          </div>
+          <div class="nav-wrapper">
+            <ul>
+              <li>
+                <a href="#">Home</a>
+              </li>
+              <li>
+                <a href="#">About us</a>
+              </li>
+              <li>
+                <a href="#">Products</a>
+              </li>
+              <li>
+                <a href="#">Contact us</a>
+              </li>
+            </ul>
+          </div>
+          <div class="right icons-wrap">
+            <a href="#"><i class="icon-padlock"></i></a>
+            <a href="#"><i class="icon-twitter-logo-silhouette"></i></a>
+            <a href="#"><i class="icon-facebook-logo"></i></a>
+            <a href="#"><i class="icon-instagram-social-network-logo-of-photo-camera"></i></a>
+          </div>
           <div class="sidenav">
             <i class="fas fa-times"></i>
             <div class="searchbar">
@@ -74,14 +82,16 @@
           </div>
         </div>
       </div>
+    </div>   
   </header>
   <main>
+    <div class="custom-container">
       <div class="row">
         <img src="assett/Banner.png" alt="Banner" class="banner">
       </div>
       <div class="container">
         <div class="filters">
-          <form action="">
+          <form>
             <div class="row">
               <div class="col s12 m6 xl3 input-field">
                 <select tabindex="-1">
@@ -121,8 +131,10 @@
           </div>
           <div class="col s12 m3">
             <div class="pages-info right">
-              <span class="current-page">12</span> of <span class="total-page">136</span>
-              <i class="icon-caret-down disabled"></i> <i class="icon-caret-arrow-up"></i>
+              <span class="current-page">12</span> of
+              <span class="total-page">136</span>
+              <i class="icon-caret-down disabled"></i>
+              <i class="icon-caret-arrow-up"></i>
             </div>
           </div>
         </div>
@@ -133,8 +145,8 @@
             <div class="adds">
               <div class="name-block">
                 <img src="assett/luggage.png" alt="Bag">
-                <span class="name">Amber Depp
-                  <span class="stars-rating">
+                <div class="name">Amber Depp
+                  <div class="stars-rating">
                     <ul class="stars">
                       <li class="star" data-value="1">
                         <i class="icon-star"></i>
@@ -152,10 +164,10 @@
                         <i class="icon-star"></i>
                       </li>
                     </ul>
-                  </span>
-                </span>
+                  </div>
+                </div>
               </div>
-              <label for="">Flying for</label>
+              <label>Flying for</label>
               <div class="row">
                 <div class="col s5">
                   <span class="city">Islamabad</span>
@@ -189,20 +201,20 @@
               </ul>
               <div class="row">
                 <div class="col s6">
-                    <span class="date-info">Valid till:9 Dec 2018</span>
+                  <span class="date-info">Valid till:<time datetime="2018-12-09">9 Dec 2018</time></span>
                 </div>
                 <div class="col s6">
                   <button>Want to Bid</button>
                 </div>
-              </div> 
+              </div>
             </div>
           </div>
           <div class="col xl4 l6 s12">
             <div class="adds">
               <div class="name-block">
                 <img src="assett/bag.png" alt="Bag">
-                <span class="name">Amber Depp
-                  <span class="stars-rating">
+                <div class="name">Amber Depp
+                  <div class="stars-rating">
                     <ul class="stars">
                       <li class="star" data-value="1">
                         <i class="icon-star"></i>
@@ -220,10 +232,10 @@
                         <i class="icon-star"></i>
                       </li>
                     </ul>
-                  </span>
-                </span>
+                  </div>
+                </div>
               </div>
-              <label for="">Flying for</label>
+              <label>Flying for</label>
               <div class="row">
                 <div class="col s5">
                   <span class="city">Islamabad</span>
@@ -257,7 +269,7 @@
               </ul>
               <div class="row">
                 <div class="col s6">
-                  <span class="date-info">Valid till:9 Dec 2018</span>
+                  <span class="date-info">Valid till:<time datetime="2018-12-09">9 Dec 2018</time></span>
                 </div>
                 <div class="col s6">
                   <button>Want to Bid</button>
@@ -269,8 +281,8 @@
             <div class="adds">
               <div class="name-block">
                 <img src="assett/luggage-2.png" alt="Bag">
-                <span class="name">Amber Depp
-                  <span class="stars-rating">
+                <div class="name">Amber Depp
+                  <div class="stars-rating">
                     <ul class="stars">
                       <li class="star" data-value="1">
                         <i class="icon-star"></i>
@@ -288,10 +300,10 @@
                         <i class="icon-star"></i>
                       </li>
                     </ul>
-                  </span>
-                </span>
+                  </div>
+                </div>
               </div>
-              <label for="">Flying for</label>
+              <label>Flying for</label>
               <div class="row">
                 <div class="col s5">
                   <span class="city">Islamabad</span>
@@ -325,7 +337,7 @@
               </ul>
               <div class="row">
                 <div class="col s6">
-                  <span class="date-info">Valid till:9 Dec 2018</span>
+                  <span class="date-info"><time datetime="2018-12-09">9 Dec 2018</time></span>
                 </div>
                 <div class="col s6">
                   <button>Want to Bid</button>
@@ -337,8 +349,8 @@
             <div class="adds">
               <div class="name-block">
                 <img src="assett/luggage.png" alt="Bag">
-                <span class="name">Amber Depp
-                  <span class="stars-rating">
+                <div class="name">Amber Depp
+                  <div class="stars-rating">
                     <ul class="stars">
                       <li class="star" data-value="1">
                         <i class="icon-star"></i>
@@ -356,10 +368,10 @@
                         <i class="icon-star"></i>
                       </li>
                     </ul>
-                  </span>
-                </span>
+                  </div>
+                </div>
               </div>
-              <label for="">Flying for</label>
+              <label>Flying for</label>
               <div class="row">
                 <div class="col s5">
                   <span class="city">Islamabad</span>
@@ -393,7 +405,7 @@
               </ul>
               <div class="row">
                 <div class="col s6">
-                  <span class="date-info">Valid till:9 Dec 2018</span>
+                  <span class="date-info"><time datetime="2018-12-09">9 Dec 2018</time></span>
                 </div>
                 <div class="col s6">
                   <button>Want to Bid</button>
@@ -405,29 +417,29 @@
             <div class="adds">
               <div class="name-block">
                 <img src="assett/bag.png" alt="Bag">
-              <span class="name">Amber Depp
-                <span class="stars-rating">
-                  <ul class="stars">
-                    <li class="star" data-value="1">
-                      <i class="icon-star"></i>
-                    </li>
-                    <li class="star" data-value="2">
-                      <i class="icon-star"></i>
-                    </li>
-                    <li class="star" data-value="3">
-                      <i class="icon-star"></i>
-                    </li>
-                    <li class="star" data-value="4">
-                      <i class="icon-star"></i>
-                    </li>
-                    <li class="star" data-value="5">
-                      <i class="icon-star"></i>
-                    </li>
-                  </ul>
-                </span>
-              </span>
+                <div class="name">Amber Depp
+                  <div class="stars-rating">
+                    <ul class="stars">
+                      <li class="star" data-value="1">
+                        <i class="icon-star"></i>
+                      </li>
+                      <li class="star" data-value="2">
+                        <i class="icon-star"></i>
+                      </li>
+                      <li class="star" data-value="3">
+                        <i class="icon-star"></i>
+                      </li>
+                      <li class="star" data-value="4">
+                        <i class="icon-star"></i>
+                      </li>
+                      <li class="star" data-value="5">
+                        <i class="icon-star"></i>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
               </div>
-              <label for="">Flying for</label>
+              <label>Flying for</label>
               <div class="row">
                 <div class="col s5">
                   <span class="city">Islamabad</span>
@@ -461,7 +473,7 @@
               </ul>
               <div class="row">
                 <div class="col s6">
-                  <span class="date-info">Valid till:9 Dec 2018</span>
+                  <span class="date-info"><time datetime="2018-12-09">9 Dec 2018</time></span>
                 </div>
                 <div class="col s6">
                   <button>Want to Bid</button>
@@ -473,17 +485,29 @@
             <div class="adds">
               <div class="name-block">
                 <img src="assett/luggage-2.png" alt="Bag">
-                <span class="name">Amber Depp <span class="stars-rating">
-                  <ul class="stars">
-                    <li class="star" data-value="1"><i class="icon-star"></i></li>
-                    <li class="star" data-value="2"><i class="icon-star"></i></li>
-                    <li class="star" data-value="3"><i class="icon-star"></i></li>
-                    <li class="star" data-value="4"><i class="icon-star"></i></li>
-                    <li class="star" data-value="5"><i class="icon-star"></i></li>
-                  </ul>
-                </span></span>
+                <div class="name">Amber Depp
+                  <div class="stars-rating">
+                    <ul class="stars">
+                      <li class="star" data-value="1">
+                        <i class="icon-star"></i>
+                      </li>
+                      <li class="star" data-value="2">
+                        <i class="icon-star"></i>
+                      </li>
+                      <li class="star" data-value="3">
+                        <i class="icon-star"></i>
+                      </li>
+                      <li class="star" data-value="4">
+                        <i class="icon-star"></i>
+                      </li>
+                      <li class="star" data-value="5">
+                        <i class="icon-star"></i>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
               </div>
-              <label for="">Flying for</label>
+              <label>Flying for</label>
               <div class="row">
                 <div class="col s5">
                   <span class="city">Islamabad</span>
@@ -517,7 +541,7 @@
               </ul>
               <div class="row">
                 <div class="col s6">
-                  <span class="date-info">Valid till:9 Dec 2018</span>
+                  <span class="date-info"><time datetime="2018-12-09">9 Dec 2018</time></span>
                 </div>
                 <div class="col s6">
                   <button>Want to Bid</button>
@@ -528,20 +552,31 @@
         </div>
       </div>
       <img src="assett/towers.png" alt="Tower" class="towers-bg">
+    </div>  
   </main>
   <footer id="footer">
-    <div class="container">
-      <div class="row">
-        <div class="col s12 m12 l8">
-          <ul class="nav">
-            <li><a href="#">Help</a></li>
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">Blog</a></li>
-            <li><a href="#">Licenses</a></li>
-          </ul>
-        </div>
-        <div class="col s12 m12 l4">
-          <div class="copyrights">© 2018, made by CuckooTravels</div>
+    <div class="custom-container">
+      <div class="container">
+        <div class="row">
+          <div class="col s12 m12 l8">
+            <ul class="nav">
+              <li>
+                <a href="#">Help</a>
+              </li>
+              <li>
+                <a href="#">About Us</a>
+              </li>
+              <li>
+                <a href="#">Blog</a>
+              </li>
+              <li>
+                <a href="#">Licenses</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col s12 m12 l4">
+            <div class="copyrights">© 2018, made by CuckooTravels</div>
+          </div>
         </div>
       </div>
     </div>
@@ -551,5 +586,4 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
   <script src="js/cuckoo.js"></script>
 </body>
-
 </html>

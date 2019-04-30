@@ -1,7 +1,4 @@
-body{
-  max-width: 1440px;
-  margin: auto;
-}
+
 .banner{
   width:100%;
 }
@@ -16,8 +13,16 @@ main{
     margin: 40px 0;
     padding: 15px;
     border-radius: 3px;
+    box-shadow: 2px 2px 16px 0px $scorpion;
     .input-field{
       margin: 0;
+    }
+    button{
+      @media screen and (max-width:$mobile){
+        margin-top: 10px;
+        width: 100%;
+        text-align: center;
+      }
     }
   }
   .pages-info{
@@ -103,8 +108,10 @@ main{
         color: $white;
         position: absolute;
         bottom: 0;
-        font-family: $secondary-font;
-        @include font(18px,900);
+        font-family: $secondary-font !important;
+        max-height: 50px;
+        overflow: auto;
+        @include font(18px,700);
         @media only screen and (max-width:$mobile)  {
           font-size: 14px;
         }
@@ -128,11 +135,16 @@ main{
     width: 100%;
     position: absolute;
     bottom: 0;
+    max-width: 1440px;
   }
 }
 .select-wrapper {
   input.select-dropdown{
     height: 2rem;
+    color: $silver-chalice;
+  }
+  .caret{
+    fill: $silver-chalice;
   }
 }
 .star-color{
