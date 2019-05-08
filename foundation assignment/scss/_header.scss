@@ -1,0 +1,58 @@
+header{
+  overflow: hidden;
+  background-color: $header-background;
+  font-family: 'Univers';
+  .contact-icons{
+    padding: 5px 0 0;
+    a{
+      color:$dusty-gray;
+      @include font(12px,500);
+      &:not(:last-child){
+        padding-right: 5px;
+      }
+    }
+    i{
+      padding-right: 10px;
+    }
+  }
+  .logo-line{
+    padding: 0 0 10px;
+    .icon-menu{
+      display: block;
+      text-align: right;
+    }
+    .menu{
+      @include font(16px, 500);
+      @media screen and (max-width:$small){
+        display: none;
+      }
+      li{
+        position: relative;
+        text-align: center !important;        
+        @media screen and (min-width:$small){
+          &:not(:last-child){
+            &::after{
+              content: "/";
+              position: absolute;
+              top: 5px;
+              right: 0;
+            }
+          }
+        }
+        &:last-child{
+          a{
+            padding-right: 0;
+          }
+        }
+      }
+      a{
+        color: $black;
+        letter-spacing: 2px;
+        text-transform: lowercase;
+      }
+    }
+  }
+}
+.display-block{
+  display: block !important;
+}

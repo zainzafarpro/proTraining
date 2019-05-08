@@ -1,0 +1,50 @@
+footer{
+  background-color: $footer-background;
+  margin-top: 200px;
+  .menu-line{
+    overflow: hidden;
+    padding: 20px 0;
+    .img-alignment{
+      text-align: center;
+      @media screen and (min-width:$small) {
+        text-align: right;
+      }
+    }
+  }
+  .menu{
+      @include font(14px, 400);
+      font-family: 'Univers';
+      li{
+        position: relative;
+        text-align: center !important;
+        margin-bottom: 10px;
+        @media screen and (min-width:$small) {
+          &:not(:last-child){
+            &::after{
+              content: "|";
+              position: absolute;
+              top: 5px;
+              right: 0;
+              color: $white;
+            }
+          }
+        }
+      }
+      a{
+        color: $white;
+        padding: 0.7rem 30px;
+        text-transform: uppercase;
+      }
+  }
+  .copyright-line{
+    font-family: 'Futura';
+    p{
+      color: $white;
+      @include font(12px,400);
+    }
+    a{
+      color: $white;
+      text-decoration: underline;
+    }
+  }
+}

@@ -1,0 +1,27 @@
+@mixin font($size , $weight) {
+  font-size:$size;
+  font-weight:$weight;
+}
+@mixin h2 {
+  @include font($h2...);
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  font-family: 'Futura';
+  @media screen and (max-width:$small){
+    font-size: 18px;
+  }
+}
+@mixin plus-before {
+  content: "+";
+  padding-right: 10px;
+}
+@mixin btn {
+  color: $white;
+  background-color: $picton-blue;
+  padding: 10px 40px;
+  font-family: "Futura";
+  @include font(16px, 400);
+  border: transparent;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}

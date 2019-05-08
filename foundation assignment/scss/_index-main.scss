@@ -1,0 +1,253 @@
+.index-main{
+  .intro-title{
+    font-family: 'Futura';
+    text-align: center;
+    h2{
+      @include h2;
+      padding: 30px 0;
+      &:before, &:after{
+        content: "";
+        display: inline-block;
+        height: 0.9px;
+        width: 10%;
+        background-color: $black;
+        vertical-align: middle;
+        opacity: 0.2;
+      }
+    }
+    p{
+      max-width: 60%;
+      @include font(18px , 500);
+      margin: 0 auto;
+      @media screen and (max-width:$small){
+        max-width: 90%;
+      }
+    }
+  }
+  .services-section{
+    padding: 50px 0;
+    font-family: 'Futura';
+    .service{
+      position: relative;
+      margin-bottom: 30px;
+      img{
+        width: 100%;
+        height: 360px;
+      }
+      .title{
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        padding: 10px 0;
+        text-align: center;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        @include font(24px,400);
+        color: $white;
+        background: rgba(0,0,0,0.4);
+        .triangle{
+          width: 0;
+          height: 0;
+          border-top: 55px solid rgba(255,255,255,0.34);
+          border-left: 55px solid transparent;
+          position: absolute;
+          top: 0;
+          right: 0;
+        }
+      }
+      .mouseover{
+        position: absolute;
+        color: $white;
+        text-align: center;
+        top: 90px;
+        padding: 0 20px;
+        display: none;
+        p{
+          @include font(20px,500);
+          margin-bottom: 30px;
+        }
+        a{
+          color: $white;
+        }
+      }
+      &:hover{
+        cursor: pointer;
+        .mouseover{
+          display: block;
+        }
+      }
+      ul{
+        list-style: none;
+        margin: 0;
+        font-family: 'Univers';
+        @include font(16px ,400);
+        li{
+          margin: 2px 0;
+          padding: 5px;
+        }
+        a{
+          color: $white;
+        }
+      }
+    }
+    .repair-service{
+      ul{
+        li{
+          background-color: $gray-fourthchild;
+          &:first-child{
+            background-color: $gray-firstchild;
+          }
+          &:nth-child(2){
+            background-color: $gray-secondchild;
+          }
+          &:nth-child(3){
+            background-color: $gray-thirdchild;
+          }
+          &:nth-child(4){
+            background-color: $gray-fourthchild;
+          }
+        }
+      }
+    }
+    .maintenance-service{
+      ul{
+        li{
+          background-color: $lightblue-fifthchild;
+          &:first-child{
+            background-color:$lightblue-firstchild;
+          }
+          &:nth-child(2){
+            background-color: $lightblue-secondchild;
+          }
+          &:nth-child(3){
+            background-color: $lightblue-thirdchild;
+          }
+          &:nth-child(4){
+            background-color: $lightblue-fourthchild;
+          }
+          &:nth-child(5){
+            background-color: $lightblue-fifthchild;
+          }
+        }
+      }
+    }
+    .installation-service{
+      ul{
+        li{
+          background-color: $darkblue-fourthchild;
+          &:first-child{
+            background-color:$darkblue-firstchild;
+          }
+          &:nth-child(2){
+            background-color: $darkblue-secondchild;
+          }
+          &:nth-child(3){
+            background-color: $darkblue-thirdchild;
+          }
+          &:nth-child(4){
+            background-color: $darkblue-fourthchild;
+          }
+        }
+      }
+    }
+  }
+  .speciality-services{
+    margin-bottom: 50px;
+    h2{
+      @include h2;
+      opacity: 0.8;
+      &::before{
+        @include plus-before;
+      }
+    }
+    .speciality-services-options{
+      background-color: $dove-gray;
+      padding:20px;
+      height: 255px;
+      overflow-y: auto;
+      font-family: 'Univers';
+      letter-spacing: 2px;
+      ul{
+        list-style: none;
+        margin: 0;
+        li{
+          padding: 10px 0;
+          &::before{
+            @include plus-before;
+            color: $white;
+          }
+        }
+      }
+      a{
+        color: $white;
+        @include font(16px,400);
+        &:hover{
+          color: $picton-blue;
+        }
+      }
+    }
+    img{
+      width: 100%;
+    }
+  }
+  .news-section{
+    letter-spacing: 2px;
+    font-family: 'Futura';
+    h2{
+      @include h2;
+      opacity: 0.5;
+      &::before{
+        @include plus-before;
+      }
+    }
+    .news{
+      position: relative;
+      margin-bottom: 20px;
+      &:hover{
+        .mouseover{
+          display: block;
+          cursor: pointer;
+        }
+      }
+      .news-title{
+        background-color: rgba(68, 197, 233,0.2);
+        color: $white;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        padding: 10px;
+      }
+      .mouseover{
+        // background-color: $picton-blue;
+        // background-image: url(../assetts/mouseover.png);
+        background-image: url(../assetts/mouseover.jpg);
+        color: $white;
+        padding: 10px;
+        text-align: center;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        display: none;
+        h5{
+          @include font(18px ,500);
+          padding: 20px 0;
+          text-transform: uppercase;
+        }
+        a{
+          color: $white;
+          text-transform: uppercase;
+        }
+      }
+      img{
+        width: 100%;
+      }
+    }
+    a{
+      color: $black;
+    }
+  }
+}
