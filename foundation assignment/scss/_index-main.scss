@@ -104,6 +104,9 @@
       }
     }
     .maintenance-service{
+      .mouseover{
+        background: rgba(0,0,0,0.4);
+      }
       ul{
         li{
           background-color: $lightblue-fifthchild;
@@ -126,6 +129,9 @@
       }
     }
     .installation-service{
+      .mouseover{
+        background: rgba(0,0,0,0.4);
+      }
       ul{
         li{
           background-color: $darkblue-fourthchild;

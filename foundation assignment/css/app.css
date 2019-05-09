@@ -287,6 +287,10 @@ header .logo-line .menu a {
   background-color: #57656e;
 }
 
+.index-main .services-section .maintenance-service .mouseover {
+  background: rgba(0, 0, 0, 0.4);
+}
+
 .index-main .services-section .maintenance-service ul li {
   background-color: #b6ddec;
 }
@@ -309,6 +313,10 @@ header .logo-line .menu a {
 
 .index-main .services-section .maintenance-service ul li:nth-child(5) {
   background-color: #b6ddec;
+}
+
+.index-main .services-section .installation-service .mouseover {
+  background: rgba(0, 0, 0, 0.4);
 }
 
 .index-main .services-section .installation-service ul li {
