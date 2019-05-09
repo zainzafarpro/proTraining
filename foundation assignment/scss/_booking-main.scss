@@ -7,9 +7,12 @@
       padding: 10px 0;
     }
     p{
-      max-width: 60%;
+      max-width: 90%;
       @include font(18px , 400);
       margin: 10px auto;
+      @media screen and (min-width:$small){
+        max-width: 60%;
+      }
     }
   }
   .booking-img{
@@ -21,17 +24,10 @@
         width: 100%;
       }
       .title{
-        position: absolute;
-        top: 0;
-        right: 0;
-        left: 0;
-        padding: 10px 0;
+        @include title;
         text-align: center;
-        text-transform: uppercase;
         @include font(19px,400);
         font-family: "futura";
-        color: $white;
-        letter-spacing: 2px;
         background: rgba(0,0,0,0.4);
       }
       .triangle{
@@ -42,7 +38,7 @@
           position: absolute;
           top: 0;
           right: 0;
-        }
+      }
   }
   .booking-form-wrapper{
     background-color: $booking-background;
@@ -99,17 +95,14 @@
       }
       .news-title{
         background-color: rgba(68, 197, 233,0.2);
-        color: $white;
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        padding: 10px;
+        @include title;
       }
       .mouseover{
         // background-color: $picton-blue;
         // background-image: url(../assetts/mouseover.png);
         background-image: url(../assetts/mouseover.jpg);
+        background-repeat: no-repeat;
+        background-size: 100%;
         color: $white;
         padding: 10px;
         text-align: center;

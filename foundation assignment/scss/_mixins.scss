@@ -3,12 +3,12 @@
   font-weight:$weight;
 }
 @mixin h2 {
-  @include font($h2...);
+  font-size: 18px;
   letter-spacing: 3px;
   text-transform: uppercase;
   font-family: 'Futura';
-  @media screen and (max-width:$small){
-    font-size: 18px;
+  @media screen and (min-width:$small){
+    @include font($h2...);
   }
 }
 @mixin plus-before {
@@ -24,4 +24,14 @@
   border: transparent;
   letter-spacing: 2px;
   text-transform: uppercase;
+}
+@mixin title {
+  color: $white;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 10px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
 }

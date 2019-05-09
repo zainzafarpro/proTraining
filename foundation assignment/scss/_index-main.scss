@@ -35,16 +35,9 @@
         height: 360px;
       }
       .title{
-        position: absolute;
-        top: 0;
-        right: 0;
-        left: 0;
-        padding: 10px 0;
+        @include title;
         text-align: center;
-        text-transform: uppercase;
-        letter-spacing: 3px;
         @include font(24px,400);
-        color: $white;
         background: rgba(0,0,0,0.4);
         .triangle{
           width: 0;
@@ -204,6 +197,7 @@
     .news{
       position: relative;
       margin-bottom: 20px;
+      overflow-y: auto;
       &:hover{
         .mouseover{
           display: block;
@@ -212,17 +206,14 @@
       }
       .news-title{
         background-color: rgba(68, 197, 233,0.2);
-        color: $white;
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        padding: 10px;
+        @include title;
       }
       .mouseover{
         // background-color: $picton-blue;
         // background-image: url(../assetts/mouseover.png);
         background-image: url(../assetts/mouseover.jpg);
+        background-repeat: no-repeat;
+        background-size: 100%;
         color: $white;
         padding: 10px;
         text-align: center;
